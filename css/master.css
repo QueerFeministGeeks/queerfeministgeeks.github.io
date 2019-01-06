@@ -1,0 +1,129 @@
+/*
+QueerFeministGeeks - master.css
+1. General Styles
+2. Header
+2.1. Headerwrapper (Queer Prideflag)
+3. Content Section
+4. Pansexual Colored Buttons
+*/
+
+/* 1. General Styles */
+
+* {
+  font-family: sans-serif;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  background: #243447;
+}
+
+.main {
+  margin-top: 35vh;
+  margin-left: 15px;
+}
+
+section h2 {
+  margin: 5vh 0 5vh 0;
+}
+
+/* 2. Header */
+
+header {
+  height: 30vh;
+  background: #12c2e9;
+  background: -webkit-linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  text-align: center;
+  line-height: 25vh;
+  font-size: 5vw;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* 2.1 Headerwrapper adding the Prideflag */
+
+#headerwrapper {
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  border-bottom: none;
+  margin-bottom: 5vh;
+}
+
+#headerwrapper:after {
+    content:"";
+    background: linear-gradient(90deg, #f00000, #f00000 16.67%, #ff8000 16.67%, #ff8000 33.33%, #ffff00 33.33%, #ffff00 50%, #007940 50%, #007940 66.67%, #4040ff 66.67%, #4040ff 83.33%, #a000c0 83.33%, #a000c0);
+    display: block;
+    height:4px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
+
+/* 3. Content Section */
+section p {
+  line-height: 1.5;
+}
+
+section p, div.flex-content {
+  font-size: 1.4em;
+  max-width: 85%;
+  text-align: justify;
+  margin: auto auto 1.4em auto;
+}
+
+div.flex-content .button {
+  color: white;
+  padding: 15px 32px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: auto;
+}
+
+div.flex-content {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 4. Pansexual Colored Buttons */
+
+.button:nth-child(1) {
+  border: 1px solid #f3b2c8;
+  border-radius: 4px;
+}
+
+.button:nth-child(2) {
+  border: 1px solid #ede4b6;
+  border-radius: 4px;
+  transition-delay: 0s;
+}
+
+.button:nth-child(3) {
+  border: 1px solid #a6d8e8;
+  border-radius: 4px;
+}
+
+.button:nth-child(1):hover {
+  background: #ff148c; transition: 1s ease-in-out; border-color: #7f8fa6;
+}
+
+.button:nth-child(2):hover {
+  background: #ffda00; transition: 1s ease-in-out; border-color: #7f8fa6;
+}
+
+.button:nth-child(3):hover {
+  background: #05aeff; transition: 1s ease-in-out; border-color: #7f8fa6;
+}
